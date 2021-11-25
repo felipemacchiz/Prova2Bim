@@ -21,14 +21,16 @@ namespace API.Controllers
         {
             _context.Categorias.AddRange(new Categoria[]
                 {
-                    new Categoria { CategoriaId = 1, Nome = "Categoria 1" },
+                    new Categoria { CategoriaId = 1, Nome = "Alimentos" },
                 }
             );
             _context.Produtos.AddRange(new Produto[]
                 {
-                    new Produto { ProdutoId = 1, Nome = "Produto 1", Preco = 1, Quantidade = 1, CategoriaId = 1 },
-                    new Produto { ProdutoId = 2, Nome = "Produto 2", Preco = 2, Quantidade = 2, CategoriaId = 1 },
-                    new Produto { ProdutoId = 3, Nome = "Produto 3", Preco = 3, Quantidade = 3, CategoriaId = 1 },
+                    new Produto { ProdutoId = 1, Nome = "Arroz", Preco = 10, Quantidade = 19, CategoriaId = 1 },
+                    new Produto { ProdutoId = 2, Nome = "Feijão", Preco = 8, Quantidade = 23, CategoriaId = 1 },
+                    new Produto { ProdutoId = 3, Nome = "Batata", Preco = 6, Quantidade = 31, CategoriaId = 1 },
+                    new Produto { ProdutoId = 3, Nome = "Carne", Preco = 12, Quantidade = 27, CategoriaId = 1 },
+                    new Produto { ProdutoId = 3, Nome = "Macarrão", Preco = 4, Quantidade = 26, CategoriaId = 1 },
                 }
             );
             _context.SaveChanges();
